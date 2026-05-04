@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dabasmita - Video Editor Portfolio</title>
+    <meta name="description"
+        content="Portfolio of a video editor helping creators, coaches, and brands turn raw footage into engaging videos.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container container">
+            <a href="#home" class="logo">
+                <span class="logo-text">Dabasmita</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Why Me</a></li>
+                <li><a href="#featured-work" class="nav-link">Work</a></li>
+                <li><a href="#process" class="nav-link">Process</a></li>
+                <li><a href="#pricing" class="nav-link">Packages</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+            </ul>
+            <a href="https://calendar.app.google/QCSGcgBmVAa1bjWG8" target="_blank" rel="noopener noreferrer" class="btn btn-premium nav-cta">Book a Call</a>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="ph ph-list"></i>
+            </button>
+        </div>
+        <div class="mobile-menu">
+            <ul class="mobile-nav-links">
+                <li><a href="#home" class="mobile-nav-link">Home</a></li>
+                <li><a href="#services" class="mobile-nav-link">Why Me</a></li>
+                <li><a href="#featured-work" class="mobile-nav-link">Work</a></li>
+                <li><a href="#process" class="mobile-nav-link">Process</a></li>
+                <li><a href="#pricing" class="mobile-nav-link">Packages</a></li>
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="https://calendar.app.google/QCSGcgBmVAa1bjWG8" target="_blank" rel="noopener noreferrer" class="mobile-nav-link cta-link">Book a Call</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- 1. HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-ribbon-wave" aria-hidden="true">
+                <svg class="wave-svg" viewBox="0 0 1200 900" preserveAspectRatio="xMinYMax slice">
+                    <defs>
+                        <!-- Gradient ensuring deep red on left, purple mix in center, solid bright blue on right -->
+                        <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#7A0C1D" />
+                            <stop offset="30%" stop-color="#B80F2A" />
+                            <stop offset="60%" stop-color="#6D28D9" /> <!-- Purple blend -->
+                            <stop offset="80%" stop-color="#2563EB" /> <!-- Strong Blue -->
+                            <stop offset="100%" stop-color="#3B82F6" /> <!-- Bright Blue Edge -->
+                        </linearGradient>
+                        <linearGradient id="wave-highlight-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                            <stop offset="0%" stop-color="#B80F2A" />
+                            <stop offset="50%" stop-color="#E50914" />
+                            <stop offset="80%" stop-color="#1D4ED8" />
+                            <stop offset="100%" stop-color="#60A5FA" />
+                        </linearGradient>
+                    </defs>
+                    <!-- VERY deep S-curves ensuring it looks extremely curvy and organic, not straight -->
+                    <path class="wave-path wave-path-base" d="M-200,800 C 300,0 700,1000 1500,200" />
+                    <path class="wave-path wave-path-core" d="M-200,700 C 400,-100 800,1100 1600,300" />
+                    <path class="wave-path wave-path-blue" d="M-100,900 C 500,100 900,1200 1700,400" />
+                    <path class="wave-path wave-path-highlight" d="M-300,600 C 200,-200 600,900 1400,100" />
+                </svg>
+            </div>
+            <div class="container hero-container animate-on-scroll">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="hero-line">Elevate Your Content With</span>
+                        <span class="hero-line"><span class="text-gradient">Scroll-Stopping</span> Video Edits</span>
+                    </h1>
+                    <p class="hero-subtitle">I help creators, coaches, and brands turn raw footage into engaging reels,
+                        talking-head videos, podcasts, and motion-driven content that keeps viewers watching.</p>
+                    <div class="hero-ctas">
+                        <a href="https://calendar.app.google/QCSGcgBmVAa1bjWG8" target="_blank" rel="noopener noreferrer" class="btn btn-premium btn-lg">Book a Call</a>
+                        <a href="#featured-work" class="btn btn-secondary btn-lg">View My Work <i
+                                class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-video-wrapper">
+                    <!-- [EDITABLE: HERO VIDEO] -->
+                    <div class="video-placeholder cinematic-frame hero-frame">
+                        <iframe src="https://www.youtube.com/embed/7Yuhmn_zJl4" title="Dabasmita Intro Video"
+                            loading="lazy" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <!-- [/EDITABLE] -->
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <i class="ph ph-mouse-simple"></i>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <section id="services" class="section services-section">
+            <div class="ambient-light-container">
+                <div class="ambient-light light-red" style="top: 10%; right: -20%; opacity: 0.2;"></div>
+            </div>
+            <div class="container animate-on-scroll">
+                <div class="section-header">
+                    <h2 class="section-title">What I Do Best</h2>
+                    <p class="section-desc">Specialized editing services designed to hold attention and elevate your
+                        brand.</p>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card glass-card">
+                        <div class="card-glow"></div>
+                        <i class="ph-duotone ph-user-focus service-icon"></i>
+                        <h3>Talking Head Video Editing</h3>
+                        <p>Clean, retention-focused edits for coaches, creators, educators, and personal brands.
+                            Includes pacing, captions, cuts, visual emphasis, and storytelling flow.</p>
+                        <div class="tags">
+                            <span class="tag">Retention</span>
+                            <span class="tag">Captions</span>
+                            <span class="tag">Storytelling</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card glass-card">
+                        <div class="card-glow"></div>
+                        <i class="ph-duotone ph-device-mobile service-icon"></i>
+                        <h3>Reels, Shorts & Social Edits</h3>
+                        <p>Short-form videos designed for Instagram Reels, YouTube Shorts, TikTok, and Facebook.
+                            Hook-focused, fast-paced, and optimized for scroll-stopping attention.</p>
+                        <div class="tags">
+                            <span class="tag">Reels</span>
+                            <span class="tag">Shorts</span>
+                            <span class="tag">Viral-Ready</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card glass-card">
+                        <div class="card-glow"></div>
+                        <i class="ph-duotone ph-headphones service-icon"></i>
+                        <h3>Podcast & Long-Form Editing</h3>
+                        <p>Clean podcast and YouTube edits with smooth cuts, audio cleanup, pacing, storytelling, and
+                            repurposing potential.</p>
+                        <div class="tags">
+                            <span class="tag">Podcast</span>
+                            <span class="tag">YouTube</span>
+                            <span class="tag">Clean Flow</span>
+                        </div>
+                    </div>
+
+                    <div class="service-card glass-card">
+                        <div class="card-glow"></div>
+                        <i class="ph-duotone ph-bezier-curve service-icon"></i>
+                        <h3>Motion Graphics & Visual Polish</h3>
+                        <p>Subtle motion graphics, animated text, b-roll placement, sound design, and visual polish to
+                            make videos feel more premium.</p>
+                        <div class="tags">
+                            <span class="tag">Motion</span>
+                            <span class="tag">B-roll</span>
+                            <span class="tag">Sound Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. FEATURED WORK -->
+        <section id="featured-work" class="section work-section">
+            <div class="ambient-light-container">
+                <div class="ambient-light light-blue" style="top: 20%; left: -10%;"></div>
+            </div>
+            <div class="container animate-on-scroll">
+                <div class="section-header">
+                    <h2 class="section-title">Featured Work</h2>
+                    <p class="section-desc">My highest-impact edits. See how raw footage turns into engaging content.
+                    </p>
+                </div>
+
+                <div class="work-layout">
+                    <!-- Main Featured Project (16:9) -->
+                    <div class="project-card featured-main glass-card">
+                        <div class="video-placeholder cinematic-frame aspect-16-9">
+                            <iframe src="https://www.youtube.com/embed/G8Q7-Cwc78U" title="Portfolio / Gig Video" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                        <div class="project-info">
+                            <span class="category-tag">Main Portfolio Video</span>
+                            <h3>Portfolio / Gig Video</h3>
+                            <p>A showcase of my editing style, pacing, storytelling, and visual polish.</p>
+                            <a href="https://youtu.be/G8Q7-Cwc78U" class="btn btn-secondary btn-sm mt-3">Watch Full Video</a>
+                        </div>
+                    </div>
+
+                    <!-- 3 Smaller Reel Projects (9:16) -->
+                    <div class="reels-grid">
+                        <div class="project-card reel-card glass-card">
+                            <div class="video-placeholder cinematic-frame aspect-9-16">
+                                <iframe src="https://www.youtube.com/embed/ev3Pgk5h8sw" title="High-Retention Reel Edit"
+                                    loading="lazy" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="project-info">
+                                <span class="category-tag">Short-Form Edit</span>
+                                <h4>High-Retention Reel Edit</h4>
+                            </div>
+                        </div>
+
+                        <div class="project-card reel-card glass-card">
+                            <div class="video-placeholder cinematic-frame aspect-9-16">
+                                <iframe src="https://www.youtube.com/embed/t2GGEdW1lx0" title="Story-Driven Short Edit"
+                                    loading="lazy" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="project-info">
+                                <span class="category-tag">Talking-Head / Reel</span>
+                                <h4>Story-Driven Short Edit</h4>
+                            </div>
+                        </div>
+
+                        <div class="project-card reel-card glass-card">
+                            <div class="video-placeholder cinematic-frame aspect-9-16">
+                                <iframe src="https://www.youtube.com/embed/Os3eV409YQ4" title="Dynamic Motion Reel"
+                                    loading="lazy" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="project-info">
+                                <span class="category-tag">Motion / Visual Edit</span>
+                                <h4>Dynamic Motion Reel</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="recent-work" class="section recent-work-section">
+            <div class="ambient-light-container">
+                <div class="ambient-light light-blue" style="top: 30%; right: -10%; opacity: 0.2;"></div>
+            </div>
+            <div class="container animate-on-scroll">
+                <div class="section-header center">
+                    <h2 class="section-title">Recent Work</h2>
+                    <p class="section-desc">A gallery of my latest edits and ongoing output.</p>
+                </div>
+
+                <div class="recent-work-grid masonry-like">
+                    <!-- Mix of 16:9 and 9:16 placeholders -->
+                    <div class="recent-card glass-card span-col-2">
+                        <div class="video-placeholder cinematic-frame aspect-16-9">
+                            <iframe src="https://www.youtube.com/embed/iEbooclHSGU" title="Talking-Head Story Edit"
+                                loading="lazy" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="recent-info">
+                            <h4>Talking-Head Story Edit</h4>
+                        </div>
+                    </div>
+
+                    <div class="recent-card glass-card">
+                        <div class="video-placeholder cinematic-frame aspect-9-16">
+                            <iframe src="https://www.youtube.com/embed/HLcQx2z42KI" title="Fast-Paced Short Edit"
+                                loading="lazy" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="recent-info">
+                            <h4>Fast-Paced Short Edit</h4>
+                        </div>
+                    </div>
+
+                    <div class="recent-card glass-card">
+                        <div class="video-placeholder cinematic-frame aspect-9-16">
+                            <iframe src="https://www.youtube.com/embed/DbdJj-Bh8uU" title="Podcast Reel Edit"
+                                loading="lazy" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="recent-info">
+                            <h4>Podcast Reel Edit</h4>
+                        </div>
+                    </div>
+
+                    <div class="recent-card glass-card span-col-2">
+                        <div class="video-placeholder cinematic-frame aspect-16-9">
+                            <iframe src="https://www.youtube.com/embed/ZScbKh1XIuI" title="Apple-Style UI Animation"
+                                loading="lazy" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                        <div class="recent-info">
+                            <h4>Apple-Style UI Animation</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. HOW IT WORKS / PROCESS SECTION -->
+        <section id="process" class="section process-section">
+            <div class="container animate-on-scroll">
+                <div class="section-header">
+                    <h2 class="section-title">How I Work</h2>
+                    <p class="section-desc">A streamlined process to get your videos edited fast without the headache.
+                    </p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="step-card glass-card">
+                        <div class="step-number">01</div>
+                        <h3>Send Your Footage</h3>
+                        <p>Share your raw clips, references, brand guidelines, and project goals through your preferred
+                            method.</p>
+                    </div>
+                    <div class="step-card glass-card">
+                        <div class="step-number">02</div>
+                        <h3>I Edit With Strategy</h3>
+                        <p>I structure the story, clean the cuts, add captions, motion, b-roll, sound design, and visual
+                            polish.</p>
+                    </div>
+                    <div class="step-card glass-card">
+                        <div class="step-number">03</div>
+                        <h3>Review & Feedback</h3>
+                        <p>You review the first version and send feedback. I refine the edit based on your direction.
+                        </p>
+                    </div>
+                    <div class="step-card glass-card">
+                        <div class="step-number">04</div>
+                        <h3>Final Delivery</h3>
+                        <p>You receive the final optimized video, ready to upload across your chosen platforms.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. WHAT PEOPLE SAY ABOUT ME -->
+        <section id="testimonials" class="section testimonials-section">
+            <div class="ambient-light-container">
+                <div class="ambient-light light-red" style="top: 50%; right: -20%;"></div>
+            </div>
+            <div class="container animate-on-scroll">
+                <div class="section-header center">
+                    <h2 class="section-title">What People Say About Me</h2>
+                    <p class="section-desc">Real comments, public shares, and feedback from mentors, creators,
+                        communities, and viewers.</p>
+                </div>
+
+                <div class="pricing-grid" style="grid-template-columns: 1fr;">
+                    <div class="pricing-card glass-card" style="max-width: 600px; margin: 0 auto; text-align: left;">
+                        <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:1.5rem;">
+                                RR</div>
+                            <div>
+                                <h3 style="margin: 0;">Rafayat Rakib</h3>
+                                <p style="margin: 0; font-size: 0.9rem; opacity: 0.8;">Mentor · Founder of Digital
+                                    Dropouts · Video Editor · Top-rated Fiverr Pro Seller</p>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 1rem;"><strong>Public Share:</strong><br>“Love it!!”</p>
+                        <p style="margin-bottom: 1rem;"><strong>Mentor Feedback:</strong><br>“Proud, big brother ❤️”</p>
+                        <p style="margin-bottom: 1.5rem;"><em>Context:<br>Shared my work publicly and expressed pride in
+                                my growth as a creator.</em></p>
+                        <div class="tags" style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                            <span class="tag">Public Share</span>
+                            <span class="tag">Mentor Feedback</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pricing-grid mt-5"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+                    <!-- Card 1 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:1rem; width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%;">
+                                MS</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.95rem;">Mohammad Ahnaf Farhan Eshat (Showmiq)</h4>
+                                <p style="margin: 0; font-size: 0.8rem; opacity: 0.8;">Mentor · Co-Founder of Digital
+                                    Dropouts</p>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.8rem;">
+                            <span class="tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Mentor Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.9rem;">“OP lighting setup 🔥”</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:1rem; width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%;">
+                                SZ</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.95rem;">Sumaiya Jannat Zarin</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.8rem;">
+                            <span class="tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Creative
+                                Reaction</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.9rem;">“I really liked the framing and colour choices. It
+                            looks clean and aesthetic, and the text alignment was nice too.”</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:1rem; width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%;">
+                                FN</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.95rem;">Fahimul Islam Neil</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.8rem;">
+                            <span class="tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Creative
+                                Reaction</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.9rem;">“Bro cooked — the edit came out strong.”</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1.5rem;">
+                        <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:1rem; width: 40px; height: 40px; flex-shrink: 0; border-radius: 50%;">
+                                RR</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.95rem;">Rafiur Rahman</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.8rem;">
+                            <span class="tag" style="font-size: 0.75rem; padding: 0.2rem 0.6rem;">Community
+                                Reaction</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.9rem;">“Excellent work. Turned out really well.”</p>
+                    </div>
+                </div>
+
+                <div class="pricing-grid mt-4"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                    <!-- Card 1 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:0.9rem; width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%;">
+                                NU</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.85rem;">Nasir Uddin</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.6rem;">
+                            <span class="tag" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">Instagram
+                                Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem;">“Good work 👌👌👌”</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:0.9rem; width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%;">
+                                MT</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.85rem;">MD Tanvir Hasan</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.6rem;">
+                            <span class="tag" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">Instagram
+                                Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem;">“Quality overloaded ✅✅”</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:0.9rem; width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%;">
+                                MF</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.85rem;">Mohammad Farid</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.6rem;">
+                            <span class="tag" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">Instagram
+                                Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem;">“The edit was fire 🔥🔥🔥”</p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:0.9rem; width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%;">
+                                KT</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.85rem;">Kaniz Fatema Tuli</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.6rem;">
+                            <span class="tag" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">YouTube Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem;">“Helpful video ❤️”</p>
+                    </div>
+                </div>
+
+                <div class="pricing-grid mt-4"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem;">
+                    <!-- Card 1 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:0.9rem; width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%;">
+                                SK</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.85rem;">Sejuti Karmakar</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.6rem;">
+                            <span class="tag" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">YouTube Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem;">“Keep growing ❤️❤️❤️”</p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:0.9rem; width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%;">
+                                JA</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.85rem;">Josim Ahmed</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.6rem;">
+                            <span class="tag" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">YouTube Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem;">“Excellent work. Keep going ❤️”</p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="pricing-card glass-card" style="text-align: left; padding: 1rem;">
+                        <div style="display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.8rem;">
+                            <div class="author-avatar placeholder-avatar"
+                                style="display:flex; align-items:center; justify-content:center; color:white; font-weight:bold; font-size:0.9rem; width: 30px; height: 30px; flex-shrink: 0; border-radius: 50%;">
+                                IK</div>
+                            <div>
+                                <h4 style="margin: 0; font-size: 0.85rem;">Imtiaz Karim</h4>
+                            </div>
+                        </div>
+                        <div class="tags" style="margin-bottom: 0.6rem;">
+                            <span class="tag" style="font-size: 0.7rem; padding: 0.15rem 0.5rem;">YouTube Comment</span>
+                        </div>
+                        <p style="margin: 0; font-size: 0.85rem;">“Solid work 💯”</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="section pricing-section">
+            <div class="ambient-light-container">
+                <div class="ambient-light light-red" style="top: 40%; left: -20%; opacity: 0.2;"></div>
+                <div class="ambient-light light-blue" style="bottom: -10%; right: -10%; opacity: 0.15;"></div>
+            </div>
+            <div class="container animate-on-scroll">
+                <div class="section-header center">
+                    <h2 class="section-title">Creative Editing Packages</h2>
+                    <p class="section-desc">Choose a plan that fits your content needs. Need something custom? Book a
+                        call.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Plan 1 -->
+                    <div class="pricing-card glass-card">
+                        <div class="plan-header">
+                            <h3>Basic Plan</h3>
+                            <div class="price">Starting at <span>$149</span></div>
+                            <p>Best for creators who need clean, consistent short-form edits.</p>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="ph-bold ph-check"></i> 4 short-form videos per month</li>
+                                <li><i class="ph-bold ph-check"></i> Reels / Shorts / TikTok edits</li>
+                                <li><i class="ph-bold ph-check"></i> Clean cuts and pacing</li>
+                                <li><i class="ph-bold ph-check"></i> Captions</li>
+                                <li><i class="ph-bold ph-check"></i> Basic color correction</li>
+                                <li><i class="ph-bold ph-check"></i> Basic sound cleanup</li>
+                                <li><i class="ph-bold ph-check"></i> 1 revision per video</li>
+                                <li><i class="ph-bold ph-check"></i> Delivery: 3–5 days per video</li>
+                            </ul>
+                        </div>
+                        <a href="https://calendar.app.google/QCSGcgBmVAa1bjWG8" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-full">Book a Call</a>
+                    </div>
+
+                    <!-- Plan 2: Popular -->
+                    <div class="pricing-card glass-card popular">
+                        <div class="popular-glow"></div>
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="plan-header">
+                            <h3>Standard Plan</h3>
+                            <div class="price">Starting at <span>$349</span></div>
+                            <p>Best for creators and brands who need regular, polished content.</p>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="ph-bold ph-check"></i> 8 short-form videos per month</li>
+                                <li><i class="ph-bold ph-check"></i> Reels / Shorts / talking-head edits</li>
+                                <li><i class="ph-bold ph-check"></i> Stronger hooks and pacing</li>
+                                <li><i class="ph-bold ph-check"></i> Captions with emphasis</li>
+                                <li><i class="ph-bold ph-check"></i> B-roll placement</li>
+                                <li><i class="ph-bold ph-check"></i> Sound design</li>
+                                <li><i class="ph-bold ph-check"></i> Motion text elements</li>
+                                <li><i class="ph-bold ph-check"></i> 2 revisions per video</li>
+                                <li><i class="ph-bold ph-check"></i> Delivery: 2–4 days per video</li>
+                            </ul>
+                        </div>
+                        <a href="https://calendar.app.google/QCSGcgBmVAa1bjWG8" target="_blank" rel="noopener noreferrer" class="btn btn-premium btn-full">Book a Call</a>
+                    </div>
+
+                    <!-- Plan 3 -->
+                    <div class="pricing-card glass-card">
+                        <div class="plan-header">
+                            <h3>Premium Plan</h3>
+                            <div class="price">Starting at <span>$649</span></div>
+                            <p>Best for creators, coaches, and brands who want a more complete content polish
+                                experience.</p>
+                        </div>
+                        <div class="plan-features">
+                            <ul>
+                                <li><i class="ph-bold ph-check"></i> 12–16 short-form videos per month</li>
+                                <li><i class="ph-bold ph-check"></i> Talking-head, reels, podcast clips, or repurposed
+                                    long-form content</li>
+                                <li><i class="ph-bold ph-check"></i> Advanced pacing and structure</li>
+                                <li><i class="ph-bold ph-check"></i> Premium captions</li>
+                                <li><i class="ph-bold ph-check"></i> B-roll and visual polish</li>
+                                <li><i class="ph-bold ph-check"></i> Motion graphics</li>
+                                <li><i class="ph-bold ph-check"></i> Sound design</li>
+                                <li><i class="ph-bold ph-check"></i> Priority delivery</li>
+                                <li><i class="ph-bold ph-check"></i> 3 revisions per video</li>
+                                <li><i class="ph-bold ph-check"></i> Delivery: 24–72 hours depending on complexity</li>
+                            </ul>
+                        </div>
+                        <a href="https://calendar.app.google/QCSGcgBmVAa1bjWG8" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-full">Book a Call</a>
+                    </div>
+                </div>
+
+                <!-- Custom Plan -->
+                <div class="custom-plan-banner glass-card mt-5">
+                    <div class="custom-content">
+                        <h3>Need a Custom Plan?</h3>
+                        <p>For creators, coaches, agencies, or brands with specific editing needs (custom volume, fast
+                            turnarounds, multi-format).</p>
+                    </div>
+                    <a href="#cta" class="btn btn-premium" style="white-space: nowrap;">Discuss Custom Plan</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. ABOUT ME -->
+        <section id="about" class="section about-section">
+            <div class="container animate-on-scroll">
+                <div class="about-layout">
+                    <div class="about-image">
+                        <!-- [EDITABLE: ABOUT PHOTO] -->
+                        <div class="portrait-placeholder cinematic-frame" style="padding: 0; overflow: hidden;">
+                            <img src="assets/about-photo.png" alt="Dabasmita"
+                                style="width: 100%; height: 100%; object-fit: cover; border-radius: inherit;">
+                        </div>
+                        <!-- [/EDITABLE] -->
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title">About Me</h2>
+                        <p>Hi, I’m <strong>Dabasmita</strong>, a video editor focused on helping creators and brands
+                            turn ideas into videos people actually want to watch. I work with talking-head videos,
+                            reels, podcasts, motion graphics, and storytelling-based edits. My goal is simple: make your
+                            content clearer, cleaner, and more engaging without making the process complicated.</p>
+                        <p>I believe good editing is not just about cuts and effects. It is about rhythm, emotion,
+                            clarity, and keeping the viewer connected till the end.</p>
+                        <a href="#cta" class="btn btn-premium mt-4">Let’s Work Together</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. FAQ -->
+        <section id="faq" class="section faq-section">
+            <div class="container animate-on-scroll">
+                <div class="section-header center">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                </div>
+
+                <div class="faq-accordion glass-card">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            What kind of videos do you edit?
+                            <i class="ph ph-caret-down icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>I edit talking-head videos, reels, shorts, podcasts, YouTube videos, and motion-enhanced
+                                social content.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            How do I send you footage?
+                            <i class="ph ph-caret-down icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can share your footage through Google Drive, Dropbox, or any preferred file-sharing
+                                link.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you offer revisions?
+                            <i class="ph ph-caret-down icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. Each package includes revisions, and custom plans can include more depending on the
+                                project.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Can you match my brand style?
+                            <i class="ph ph-caret-down icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes. You can send references, brand colors, fonts, examples, and previous videos so I can
+                                match your style.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Do you work monthly or project-by-project?
+                            <i class="ph ph-caret-down icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Both options are possible. You can choose a one-time project or a monthly editing plan.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. EXPLORE MY SOCIALS -->
+        <section id="socials" class="section socials-section">
+            <div class="container animate-on-scroll">
+                <div class="section-header center">
+                    <h2 class="section-title">Explore My Socials</h2>
+                    <p class="section-desc">See my edits, experiments, breakdowns, and creative journey.</p>
+                </div>
+
+                <div class="socials-grid">
+                    <a href="https://www.youtube.com/@dabasmita24fps" class="social-card glass-card">
+                        <i class="ph-fill ph-youtube-logo social-icon"></i>
+                        <h3>YouTube</h3>
+                        <p>Long-form edits & tutorials</p>
+                    </a>
+                    <a href="https://www.instagram.com/dabasmita24fps/" class="social-card glass-card">
+                        <i class="ph-fill ph-instagram-logo social-icon"></i>
+                        <h3>Instagram</h3>
+                        <p>Shorts & Reels portfolio</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dabasmitakarmakar/" class="social-card glass-card">
+                        <i class="ph-fill ph-linkedin-logo social-icon"></i>
+                        <h3>LinkedIn</h3>
+                        <p>Professional network</p>
+                    </a>
+                    <a href="mailto:dabasmitakarmakar.01@gmail.com" class="social-card glass-card">
+                        <i class="ph-fill ph-envelope social-icon"></i>
+                        <h3>Email</h3>
+                        <p>Direct contact</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 11. FINAL CTA -->
+        <section id="cta" class="section cta-section">
+            <div class="svarog-wave-container" style="opacity: 0.6;">
+                <div class="svarog-wave wave-wine"></div>
+                <div class="svarog-wave wave-blue"></div>
+            </div>
+            <div class="container animate-on-scroll">
+                <div class="cta-banner glass-card">
+                    <div class="cta-inner-glow"></div>
+                    <h2 class="cta-title">Ready to Make Your Videos Stand Out?</h2>
+                    <p class="cta-subtitle">Let’s turn your raw footage into clean, engaging, scroll-stopping content.
+                    </p>
+                    <div class="cta-actions">
+                        <a href="https://calendar.app.google/QCSGcgBmVAa1bjWG8" target="_blank" rel="noopener noreferrer" class="btn btn-premium btn-lg">Book a Call</a>
+                    </div>
+                    <p class="cta-secondary">Or message me on social media.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 12. FOOTER -->
+    <footer class="footer glass-card">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="logo-text">Dabasmita</a>
+                <p>Video editor for creators, coaches, and brands.</p>
+            </div>
+
+            <div class="footer-links-group">
+                <ul class="footer-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#featured-work">Work</a></li>
+                    <li><a href="#pricing">Packages</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Dabasmita. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
