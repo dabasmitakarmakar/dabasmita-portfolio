@@ -866,6 +866,22 @@
         </div>
     </footer>
 
+    <!-- Mobile Animation Optimization -->
+    <script>
+        if (window.innerWidth < 768) {
+            const style = document.createElement('style');
+            style.textContent = `
+                .animate-on-scroll {
+                    transform: translateY(15px) !important;
+                    transition-duration: 0.4s !important;
+                }
+                .animate-on-scroll.visible {
+                    transform: translateY(0) !important;
+                }
+            `;
+            document.head.appendChild(style);
+        }
+    </script>
     <script src="main.js"></script>
 </body>
 
